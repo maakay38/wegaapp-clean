@@ -19,8 +19,8 @@ NEW_EXE = os.path.join(BASE_DIR, "WegaApp_new.exe")
 PART_FILE = NEW_EXE + ".part"
 VERSION_FILE = os.path.join(BASE_DIR, "app_version.txt")
 
-MANIFEST_URL = "https://raw.githubusercontent.com/maakay38/wega-update/main/manifest.json"
-FALLBACK_URL = "https://github.com/maakay38/wega-update/releases/latest/download/WegaApp.exe"
+MANIFEST_URL = "https://raw.githubusercontent.com/maakay38/wegaapp-clean/main/manifest.json"
+FALLBACK_URL = "https://github.com/maakay38/wegaapp-clean/releases/latest/download/WegaApp.exe"
 
 def msg(title, text):
     try:

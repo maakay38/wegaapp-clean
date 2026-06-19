@@ -92,8 +92,8 @@ from tkinter import messagebox
 
 CURRENT_VERSION = "1.0.1"
 
-VERSION_URL = "https://raw.githubusercontent.com/maakay38/wega-update/main/version.txt"
-EXE_URL = "https://github.com/maakay38/wega-update/releases/latest/download/WegaApp.exe"
+VERSION_URL = "https://raw.githubusercontent.com/maakay38/wegaapp-clean/main/version.txt"
+EXE_URL = "https://github.com/maakay38/wegaapp-clean/releases/latest/download/WegaApp.exe"
 
 
 def check_for_update():
@@ -174,8 +174,8 @@ INIT_LOCK = threading.Lock()
 # APP UPDATE (manifest)
 # =========================
 APP_VERSION = None  # app_version.txt varsa oradan okunur
-MANIFEST_URL = "https://raw.githubusercontent.com/maakay38/wega-update/main/manifest.json"
-EXE_FALLBACK_URL = "https://github.com/maakay38/wega-update/releases/latest/download/WegaApp.exe"
+MANIFEST_URL = "https://raw.githubusercontent.com/maakay38/wegaapp-clean/main/manifest.json"
+EXE_FALLBACK_URL = "https://github.com/maakay38/wegaapp-clean/releases/latest/download/WegaApp.exe"
 
 import json
 import urllib.request
