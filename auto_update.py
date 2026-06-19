@@ -3,7 +3,7 @@ import os, sys, subprocess
 import tkinter as tk
 from tkinter import ttk, messagebox
 
-MANIFEST_URL = "https://raw.githubusercontent.com/maakay38/wega-update/main/manifest.json"
+MANIFEST_URL = "https://raw.githubusercontent.com/maakay38/wegaapp-clean/main/manifest.json"
 APP_PATH = "WegaApp.exe"
 TEMP_FILE = "WegaApp_new.exe"
 
