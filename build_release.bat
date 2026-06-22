@@ -38,8 +38,28 @@ echo ========================================
 echo EXE BUILD
 echo ========================================
 
-pyinstaller --onefile --noconsole --icon=wega.ico WegaApp.py
-pyinstaller --onefile --noconsole --icon=wega.ico TeknisyenPortal.py
+pyinstaller --onefile --noconsole --clean --name WegaApp --icon=wega.ico ^
+--collect-all selenium ^
+--collect-submodules selenium ^
+--collect-all numpy ^
+--collect-all pandas ^
+--hidden-import selenium.webdriver.chrome.options ^
+--hidden-import selenium.webdriver.chrome.service ^
+--hidden-import selenium.webdriver.common.by ^
+--hidden-import selenium.webdriver.common.keys ^
+--hidden-import selenium.webdriver.support.ui ^
+--hidden-import selenium.webdriver.support.expected_conditions ^
+WegaApp.py
+pyinstaller --onefile --noconsole --clean --name TeknisyenPortal --icon=wega.ico ^
+--collect-all selenium ^
+--collect-submodules selenium ^
+--hidden-import selenium.webdriver.chrome.options ^
+--hidden-import selenium.webdriver.chrome.service ^
+--hidden-import selenium.webdriver.common.by ^
+--hidden-import selenium.webdriver.common.keys ^
+--hidden-import selenium.webdriver.support.ui ^
+--hidden-import selenium.webdriver.support.expected_conditions ^
+TeknisyenPortal.py
 
 if not exist dist\WegaApp.exe (
     echo HATA: WegaApp.exe yok!
